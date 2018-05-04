@@ -9,21 +9,21 @@
 title: 维粑粑的个人博客
 brief-intro: 先军后警/IT技术小白/心理咨询师/快乐奶爸
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://643435675.github.io" # the base hostname & protocol for your site
+url: "https://zm1107.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
 twitter_username: #gaohaoyang126
 facebook_username: #gaohaoyang.water
-github_username:  643435675
-email: 643435675@QQ.com
-weibo_username: 3115521wh
+github_username:  zm1107
+email: zm1107@gmail.com
+weibo_username: zm1107
 zhihu_username: zm1107
 linkedIn_username: gaohaoyang
 dribbble_username:
 
-description_footer: 来自徐代龙的个人专栏！
+description_footer: 来自维粑粑的个人专栏！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
