@@ -10,7 +10,7 @@ title: 维粑粑的个人博客
 brief-intro: 先军后警/IT技术小白/心理咨询师/快乐奶爸
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zm1107.github.io" # the base hostname & protocol for your site
-
+#timezone: CN #不加入此行，可能无法显示文章，因为默认使用格林尼治时间，转换后有可能会变成未来的时间，默认错误。
 permalink: /:year/:month/:day/:title/
 
 # other links

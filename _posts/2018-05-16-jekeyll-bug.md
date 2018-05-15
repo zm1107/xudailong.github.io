@@ -2,7 +2,7 @@
 layout: post
 title:  "运气背！碰上Jekyll的bug了"
 date: 2018-05-16 01:14:54 +0800 #时间bug，换算后UTC日期会超出
-categories: 吐槽
+categories: 吐槽 技术
 tags: Jekyll 吐槽 
 excerpt: 开始没搞清楚怎么回事，发出的文章总是看不到，同样的文章头部，一个是中午，一个是现在晚上，晚上的就发不出去。后来才发现是jekyll的问题
 mathjax: true
