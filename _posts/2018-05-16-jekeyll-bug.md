@@ -12,11 +12,11 @@ mathjax: true
 
 ​	万事不懂问谷歌，发现是由于jekyll默认把日期识别为格林尼治标准时间，然后再进行换算，这样比较靠后的时间，很容易换算成第二天，也就是明天，所以系统 就无法显示。
 
-​	谷歌搜索后，扒遍github，有人说出了解决方法：在__config.yml文件中加入  timezone:CN，貌似有理！试试看：
+​	谷歌搜索后，扒遍github，有人说出了解决方法：在__config.yml文件中加入  timezone:CN，貌似有理！试试看： 
 
-![](assets/2-1526450351835.PNG)
+![](http://ww1.sinaimg.cn/large/78ff4185ly1frd72olorjj20n508ft9m.jpg)
 
-![](assets/3-1526450361068.PNG)
+![](http://ww1.sinaimg.cn/large/78ff4185ly1frd72olcuij20k3058aa8.jpg)
 
 提示找不到tzinfo，貌似是timezoneinfo的缩写。。。
 
@@ -26,15 +26,15 @@ mathjax: true
 
 嗯，装上了！再运行`jekyll serve --watch`，还是出错
 
-![](assets/4.PNG)
+![](http://ww1.sinaimg.cn/large/78ff4185ly1frd72okjvhj20k1037q2x.jpg)
 
 尼玛！又显示缺少时区数据的数据来源，我操！继续解决：
 
 `gem install tzinfo-data`
 
-![](assets/5.PNG)
+![](http://ww1.sinaimg.cn/large/78ff4185ly1frd72olcfyj20k104jwej.jpg)
 
-完美！！回想一下
+貌似完美！！！回想一下
 
 （1）在_config.yml文件里面添加timezone:CN
 
@@ -42,15 +42,19 @@ mathjax: true
 
 （3）接着按提示安装tzinfo-data
 
-各个步骤承前启后，完美！但是为什么运行jekyll服务还是出错！！
+各个步骤承前启后，完美！
+
+###==然而，还是不能发布文章（时区原因）==
+
+
 
 又上github翻，期间试过各种方法，搞不定！！
 
 去尼玛，本来想解决bug，以后还是手动撸吧！！两种方法任选一种！
 
-（1）文件头里面只用yyyy-mm-dd 不用HH:MM:SS，只设定日期，不设定具体时间，就没问题！
+==（1）文件头里面只用yyyy-mm-dd 不用HH:MM:SS，只设定日期，不设定具体时间，就没问题！==
 
-（2）非要用时间的话，最后加上时区信息！  如： 2018-05-15 22:53:16  +0800
+==（2）非要用时间的话，最后加上时区信息！  如： 2018-05-15 22:53:16  +0800==
 
 
 
