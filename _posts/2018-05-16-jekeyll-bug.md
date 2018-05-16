@@ -14,9 +14,9 @@ mathjax: true
 
 ​	谷歌搜索后，扒遍github，有人说出了解决方法：在__config.yml文件中加入  timezone:CN，貌似有理！试试看：
 
-![](../pic/20180515/2.PNG)
+![](assets/2-1526450351835.PNG)
 
-![](../pic/20180515/3.PNG)
+![](assets/3-1526450361068.PNG)
 
 提示找不到tzinfo，貌似是timezoneinfo的缩写。。。
 
@@ -26,13 +26,13 @@ mathjax: true
 
 嗯，装上了！再运行`jekyll serve --watch`，还是出错
 
-![](../pic/20180515/4.PNG)
+![](assets/4.PNG)
 
 尼玛！又显示缺少时区数据的数据来源，我操！继续解决：
 
 `gem install tzinfo-data`
 
-![](../pic/20180515/5.PNG)
+![](assets/5.PNG)
 
 完美！！回想一下
 
