@@ -36,7 +36,7 @@ disqus_shortname: weibaba
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 baidu_tongji_id: e651711c44a16a17889741d2fdba93e9
-google_analytics_id: UA-118689981-1 # google 分析追踪id
+google_analytics_id: #UA-118689981-1  google 分析追踪id
 
 # Build settings
 markdown: kramdown
